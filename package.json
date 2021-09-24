@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack ./src/index.js --output-path dist --output-filename bundle.js --mode production"
   },
   "keywords": [],
   "author": "",
