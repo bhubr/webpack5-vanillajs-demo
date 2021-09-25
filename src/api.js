@@ -1,5 +1,4 @@
-export const fetchPokemonList = async () => fetch(
-  'https://pokeapi.co/api/v2/pokemon'
+export const fetchUserList = async () => fetch(
+  'https://api.github.com/users'
 )
-  .then(res => res.json())
-  .then(data => data.results);
+  .then(res => res.json());

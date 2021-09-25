@@ -1,16 +1,16 @@
-import { fetchPokemonList } from './api';
-import { renderPokemonList } from './render-functions';
+import { fetchUserList } from './api';
+import { renderUsersList } from './render-functions';
 
 async function app() {
   // Fetch a list of pokemon objects from PokeAPI
-  const pokemons = await fetchPokemonList();
-  // Generate an HTML ul/li list of pokemons from fetched objects
-  const pokemonsList = renderPokemonList(pokemons);
-  
+  const users = await fetchUserList();
+  // Generate an HTML ul/li list of users from fetched objects
+  const usersList = renderUsersList(users);
+
   // The element where we will insert the generated HTML
   const viewport = document.getElementById('app');
   // Insert the list in the target div
-  viewport.innerHTML = pokemonsList;
+  viewport.innerHTML = usersList;
 }
 
 app();
